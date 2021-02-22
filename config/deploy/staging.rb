@@ -1,5 +1,6 @@
 server '192.168.55.54', user: 'vagrant', roles: %w{web app db}
 set :deploy_to, '/home/vagrant/ansible-test-rails'
+set :linked_files, 'config/credentials/staging.key'
 
 # server-based syntax
 # ======================
