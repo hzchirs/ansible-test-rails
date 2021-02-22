@@ -1,3 +1,6 @@
+server '192.168.55.54', user: 'vagrant', roles: %w{web app db}
+set :deploy_to, '/home/vagrant/ansible-test-rails'
+
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
